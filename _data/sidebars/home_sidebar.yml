@@ -9,36 +9,58 @@ entries:
   - title: Get Started
     output: web
     folderitems:
-    - title: Welcome to Docker
+    - title: Welcome to Docker 
       url: /index.html
       output: web
-    - title: Tenancy
-      url: /tenancy.html
-      output: web
-    - title: Admin CLI
-      url: /admin-cli.html
-      output: web
-    - title: Installation
-      url: /install.html
-      output: web
-    - title: vCenter
-      url: /vcenter.html
-      output: web
-    - title: vSphere Overview
-      url: /vsphere-overview.html
-      output: web
-    - title: vSAN Policy
-      url: /vsanpolicy.html
-      output: web
-    - title: Photon Overview
-      url: /photon-overview.html
-      output: web
-    - title: Docker Plugin Drivers
-      url: /docker-plugin-drivers.html
-      output: web
-    - title: Docker Volume CLI
-      url: /docker-volume-cli.html
-      output: web
+  - title: Setup
+    output: web
+    folderitems:
+      - title: Prerequsites
+        url: /prerequisite.html
+        output: web
+      - title: Installation
+        url: /install.html
+        output: web
+      - title: Configuration
+        url: /configuration.html
+        output: web
+  - title: User Guide
+    output: web
+    folderitems:
+      - title: Management of docker volumes
+        url: /docker-volume-cli.html
+        output: web
+      - title: Integration with Docker Swarm
+        url: /swarm-cluster.html
+        output: web  
+      - title: Datastores Support
+        url: /datastores.html
+        output: web  
+      - title: Admin CLI Reference
+        url: /admin-cli.html
+        output: web        
+      - title: Multi Tenancy
+        url: /tenancy.html
+        output: web
+      - title: Storage policy based management for container volumes
+        url: /policy-based-management.html
+        output: web
+  - title: Operations
+    output: web
+    folderitems:
+        - title: Operating at scale
+          url: /operations.html
+          output: web
+  - title: Demo Applications
+    output: web
+    folderitems:
+        - title: App with Mongo datastore
+          url: /demo-mongo-app.html
+          output: web
+        - title: Mongo DB with Swarm
+          url: /demo-mongo-swarm.html
+          output: web
+
 
 
 

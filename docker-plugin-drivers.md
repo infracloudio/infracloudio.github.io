@@ -49,3 +49,4 @@ Note:
 1. The current version of the Photon volume plugin doesn't support authentication as yet, this will be added up in a subsequent release.
 2. The "target port" is set to "9000" if authentication isn't enabled in photon controller, else port "443" is used.
 3. Both project and VM IDs mentioned above can be obtained via the "photon" CLI, see https://github.com/vmware/photon-controller/wiki/Compile-Photon-Controller-CLI.
+
