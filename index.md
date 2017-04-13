@@ -1,4 +1,3 @@
-
 ---
 title: vSphere Docker Volume Service
 
