@@ -3,19 +3,11 @@
 topnav:
 - title: Docker vSphere Documentation
   items:
-    - title: VMWare Home
-      url: http://www.vmware.com/in.html
+    - title: Home
+      url: index.html
+    - title: FAQs
+      url: faq.html
+    - title: Downloads
+      external_url: https://my.vmware.com/web/vmware/downloads
 
-#Topnav dropdowns
-topnav_dropdowns:
-- title: Topnav dropdowns
-  folders:
-    - title: Social Media
-      folderitems:
-        - title: VMWare on Youtube
-          external_url: https://www.youtube.com/user/vmwaretv
-        - title: Communities
-          external_url: https://communities.vmware.com/community/vmtn/foreign-language-forums
-        - title: Twitter
-          external_url: https://twitter.com/VMwareIN
-        
+

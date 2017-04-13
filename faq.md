@@ -1,4 +1,6 @@
-###...
+
+
+
 
 # General
 
@@ -10,6 +12,8 @@ Please see README.md in the for the release by clicking on the tag for the relea
 
 ## How do I run the setup on my laptop?
 Follow the [guide on the wiki](https://github.com/vmware/docker-volume-vsphere/wiki/Using-laptop-for-running-the-entire-stack)
+
+
 
 # Troubleshooting
 

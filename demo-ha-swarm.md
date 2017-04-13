@@ -1,5 +1,3 @@
-###...
-
 # HA Database with Docker in Swarm mode
 
 In this section we will run a database in Swarm cluster and will demonsrtate high availability even if one of nodes in the cluster is killed. The demo will also show how a volume is re-attached to a new node when the application container is re-scheduled on a new node.

@@ -1,5 +1,3 @@
-###...
-
 # Swarm Cluster
 
 ## Docker Compose

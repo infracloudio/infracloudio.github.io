@@ -1,5 +1,3 @@
-###...
-
 # Datastore & backend layout
 
 Docker volumes in vSphere are backed by VMDK files. These VMDKs could be backed by any storage backend. For example the backend storage could be one of NFS, SAN, VSAN, vVol. The VMDKs reside on a central location and can be reqested by any container running on any host. Ability to attach volumes from anywhere in cluster coupled with a clustering technology such as Swarm enables a highly available architecture.
