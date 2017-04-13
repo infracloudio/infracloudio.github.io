@@ -1,4 +1,4 @@
-repository: tomjohnson1492/documentation-theme-jekyll
+repository: infracloudio/infracloudio.github.io/
 
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
@@ -12,7 +12,7 @@ site_title: vSphere Docker Volume Service
 company_name: VMWare
 # this appears in the footer
 
-github_editme_path: infracloudio.github.io/blob/gh-pages/
+github_editme_path: infracloudio/infracloudio.github.io/blob/master/
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 disqus_shortname: idrbwjekyll

@@ -1,6 +1,9 @@
-###...
+---
+title: Running Wordpress with MySQL backemn
+---
 
-#Running Wordpress with MySQL backemnd
+
+## Running Wordpress with MySQL backemnd
 
 In this example we are going to run a Wordpress stack with Maria DB as the backend for data persistence. The example does not use any clustering technology such as Swarm mode. The idea is here to simply demonstrate the usage of volumes in docker-compose specs
 
@@ -51,7 +54,7 @@ Creating volume "wordpress_db_data" with vsphere driver
 Creating wordpress_db_1
 Creating wordpress_wordpress_1
 ```
-![Image](images/compose-mode/picture2.png)
+![Image](images/picture2.png)
 
 
 Now if we check for presence of volume - we can see
@@ -62,7 +65,7 @@ DRIVER              VOLUME NAME
 local               c20144fdfcfd2b6fe5defa3b87410723cd892aedd17a503c66f2abfa6e2cfb2c
 vsphere             wordpress_db_data@datastore3
 ```
-![Image](images/compose-mode/picture3.png)
+![Image](images/picture3.png)
 
 Let us inspect the docker volume that has been created for the MariaDB.
 
@@ -96,4 +99,4 @@ Let us inspect the docker volume that has been created for the MariaDB.
 ```
 Finally as a quick way to check if the stack is up and running properly, we can hit the Wordpress frontend on hostname:8080 and see the Wordpress UI:
 
-![Image](images/compose-mode/picture5.png)
+![Image](images/picture5.png)

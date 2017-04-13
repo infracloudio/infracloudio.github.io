@@ -1,4 +1,6 @@
-###...
+---
+title: Tenancy
+---
 
 
 <div class="panel panel-danger">

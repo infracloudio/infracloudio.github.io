@@ -1,6 +1,8 @@
-###...
+---
+title: Prerequisites
+---
 
-# Prerequisites
+## Prerequisites
 ## VMWare Environment
 
 You will need an environment with VMWare vSphere or Photon capabilities. Additionally since this plugin is focused on storage, you will need one of the storage technologies mentioned in a later section.
@@ -24,7 +26,7 @@ The managed plugin on [Docker store](https://store.docker.com/plugins/vsphere-do
 ### VIB
 The VIB for ESX server [available here](https://bintray.com/vmware/vDVS)
 
-# Storage Technologies: Introduction
+## Storage Technologies: Introduction
 
 We might refer to the terms related to storage technologies later in the documentation, but this is a good place to understand various technologies and understand more about them if you want to.
 
