@@ -127,6 +127,6 @@ Let's login and verify that the data also persists and the volume was re-attache
 
 ![Image](images/new_node.png)
 
-# Conclusion
+## Conclusion
 
 vDVS along with Swarm mode can provide a HA capability to a cluster running stateful applications. While Swarm mode takes care of re-scheduling the application containers on nodes in the cluster, vDVS plugun ensures that the volumes are managed in a similar way and data is persisted while re-scheduling of the application containers.
