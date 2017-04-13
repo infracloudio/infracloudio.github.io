@@ -51,14 +51,23 @@ entries:
         - title: Operating at scale
           url: /operations.html
           output: web
-  - title: Demo Applications
+  - title: Applications & Examples
     output: web
     folderitems:
-        - title: App with Mongo datastore
-          url: /demo-mongo-app.html
+        - title: Docker Volume
+          url: /docker-volume.html
           output: web
-        - title: Mongo DB with Swarm
-          url: /demo-mongo-swarm.html
+        - title: Wordpress app with MySql
+          url: /demo-wordpress-app.html
+          output: web
+        - title: HA DB in Docker Swarm mode
+          url: /demo-ha-swarm.html
+          output: web
+        - title: Docker Service
+          url: /docker-service.html
+          output: web
+        - title: Docker Stacks
+          url: /docker-stacks.html
           output: web
 
 
