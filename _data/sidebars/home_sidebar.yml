@@ -70,7 +70,7 @@ entries:
     output: web
     folderitems:
         - title: Photon Platform
-          url: /photon.html
+          url: /temp_photon_content.html
           output: web
         - title: Known Issues
           url: /known-issues.html
