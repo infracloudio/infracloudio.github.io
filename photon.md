@@ -1,5 +1,9 @@
-# Configuration
+---
+title: Configuration
+---
+
 ## Photon Driver
+
 The docker photon volume driver creates and manages the volumes on a photon platform. Photon platform API is used to create and manage volumes. You need two additional configurations for photon driver in the configuration file.
 
 ```
@@ -24,7 +28,7 @@ The docker photon volume driver creates and manages the volumes on a photon plat
   <tbody>
     <tr>
       <td>target</td>
-      <td>The endpoint of the Photon Controller with hostname and port in format: http://<photon_host>:<photon_port></td>
+      <td>The endpoint of the Photon Controller with hostname and port in format: http://{photon_host}:{photon_port} </td>
     </tr>
     <tr>
       <td>project</td>
