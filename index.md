@@ -7,7 +7,7 @@ title: vSphere Docker Volume Service
 
 ## vSphere Docker Volume Service
 
-<a href="https://https://store.docker.com/plugins/vsphere-docker-volume-service"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github.com/infracloudio/infracloudio.github.io/blob/master/images/docker-cert.jpeg" alt=""></a>
+<a href="https://https://store.docker.com/plugins/vsphere-docker-volume-service"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github.com/infracloudio/infracloudio.github.io/blob/master/images/docker-cert.jpeg" alt=" "></a>
 
 ## Introduction
 
