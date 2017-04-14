@@ -9,7 +9,7 @@ entries:
   - title: Get Started
     output: web
     folderitems:
-    - title: Welcome to Docker 
+    - title: Introduction
       url: /index.html
       output: web
   - title: Setup
@@ -30,27 +30,24 @@ entries:
       - title: Management of docker volumes
         url: /docker-volume-cli.html
         output: web
-      - title: Integration with Docker Swarm
+      - title: Docker Compatibility
         url: /swarm-cluster.html
-        output: web  
+        output: web
+  - title: Admin Guide
+    output: web
+    folderitems:
       - title: Datastores Support
         url: /datastores.html
         output: web  
       - title: Admin CLI Reference
         url: /admin-cli.html
         output: web        
-      - title: Multi Tenancy
+      - title: Multi-Tenancy
         url: /tenancy.html
         output: web
       - title: Storage policy based management for container volumes
         url: /policy-based-management.html
         output: web
-  - title: Operations
-    output: web
-    folderitems:
-        - title: Operating at scale
-          url: /operations.html
-          output: web
   - title: Applications & Examples
     output: web
     folderitems:
