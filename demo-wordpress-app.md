@@ -9,7 +9,10 @@ In this example we are going to run a Wordpress stack with Maria DB as the backe
 
 Before we do anything, let's check for presence of volumes:
 
-![Image](images/compose-mode/picture1.png)
+```
+# docker volume ls
+DRIVER              VOLUME NAME
+```
 
 To deploy the application we will use following docker-compose file. We have two containers - one for frontend Wordpress & another for backend Maria DB. The Maria DB container uses a volumes named ```db_data``` which is defined in the volumes section with vSphere as driver and 1GB space.
 
@@ -54,7 +57,6 @@ Creating volume "wordpress_db_data" with vsphere driver
 Creating wordpress_db_1
 Creating wordpress_wordpress_1
 ```
-![Image](images/picture2.png)
 
 
 Now if we check for presence of volume - we can see
@@ -65,7 +67,6 @@ DRIVER              VOLUME NAME
 local               c20144fdfcfd2b6fe5defa3b87410723cd892aedd17a503c66f2abfa6e2cfb2c
 vsphere             wordpress_db_data@datastore3
 ```
-![Image](images/picture3.png)
 
 Let us inspect the docker volume that has been created for the MariaDB.
 
