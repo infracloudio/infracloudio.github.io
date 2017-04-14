@@ -10,4 +10,15 @@ topnav:
     - title: Downloads
       external_url: https://my.vmware.com/web/vmware/downloads
 
+#Topnav dropdowns
+topnav_dropdowns:
+- title: Downloads
+  folders:
+    - title: Downloads
+      folderitems:
+        - title: Docker Plugin
+          external_url: https://store.docker.com/plugins/vsphere-docker-volume-service
+        - title: VIB
+          external_url: https://bintray.com/vmware/vDVS/VIB
+
 
