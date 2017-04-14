@@ -66,7 +66,7 @@ entries:
         - title: Multi-tenancy Example
           url: /tenancy-eg.html
           output: web
-   - title: Miscellaneous
+  - title: Miscellaneous
     output: web
     folderitems:
         - title: Photon Platform
