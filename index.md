@@ -28,6 +28,8 @@ Some of key features of the vDVS are:
 * Enterprise class storage: You can use vDVS with proven enterprise class technologies such as VMWare vSAN, VMFS, NFS etc. 
 * Security & RBAC: The vSphere admin can manage the security and access controls on the underlying hosts on a set of hosts or data centers.
 * Simple to use: It is as easy to use as other docker APIs and from end user’s perspective there is no need for additional configuration etc.
+* Docker Compatibility: vSphere Docker Volume Service is 100% Docker compatible and integrates with Docker Swarm to extend High Availability feature provided by Swarm
+* Storage Policy Management: vSphere Docker Volume Service brings vSphere's advanced storage feature like policy management to Docker ecosystem.
 
 This service is integrated with [Docker Volume Plugin framework](https://docs.docker.com/engine/extend/plugins_volume/). It does not need credential management or configuration management. 
 
