@@ -7,7 +7,7 @@ title: vSphere Docker Volume Service
 
 ## vSphere Docker Volume Service
 
-[<img src="https://github.com/vmware/docker-volume-vsphere/blob/master/docs/misc/Docker%20Certified.png" width="180" align="right">](https://store.docker.com/plugins/vsphere-docker-volume-service?tab=description)
+[<img src="https://github.com/vmware/docker-volume-vsphere/blob/master/docs/misc/Docker%20Certified.png" width="180" align="right">](https://store.docker.com/plugins/vsphere-docker-volume-service)
 
 ## Introduction
 
