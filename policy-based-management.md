@@ -30,6 +30,7 @@ Here's a step-by-step guide to create and use VSAN Storage Policies for Docker V
 
 - Create a "gold" and a "silver" storage policies
 
+
 ```
 /usr/lib/vmware/vmdkops/bin/vmdkops_admin.py policy create --name gold --content '(("hostFailuresToTolarate" i0)("forceProvisioning" i1))'
 Successfully created policy: gold
