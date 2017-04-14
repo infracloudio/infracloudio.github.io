@@ -9,7 +9,7 @@ In this example we are going to run a Wordpress stack with Maria DB as the backe
 
 Before we do anything, let's check for presence of volumes:
 
-![Image](images/compose-mode/picture1.png)
+![Image](images/picture1.png)
 
 To deploy the application we will use following docker-compose file. We have two containers - one for frontend Wordpress & another for backend Maria DB. The Maria DB container uses a volumes named ```db_data``` which is defined in the volumes section with vSphere as driver and 1GB space.
 
