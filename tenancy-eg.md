@@ -1,5 +1,5 @@
 ---
-Multi-Tenancy using VMGroups
+title: Multi-Tenancy using VMGroups
 ---
 
 For the vSphere Docker Volume Service, Multi-tenancy is implemented by assigning a Datastore and VMs to a vmgroup. 
