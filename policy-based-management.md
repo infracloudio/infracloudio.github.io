@@ -30,25 +30,25 @@ Here's a step-by-step guide to create and use VSAN Storage Policies for Docker V
 
 - Create a "gold" and a "silver" storage policies
 
-![Image](images/vsan/create_1.png)
+![Image](images/create_1.png)
 
 - Create 2 Docker Volume using above policies
 
 
-![Image](images/vsan/create_vol.png)
+![Image](images/create_vol.png)
 
 - Verify if the policies are being used by the volumes
 
-![Image](images/vsan/verify.png)
+![Image](images/verify.png)
 
 - Update one policy content
 
-![Image](images/vsan/update_policy.png)
+![Image](images/update_policy.png)
 
 - Remove the volume before removing policy
 
-![Image](images/vsan/remove_volume.png)
+![Image](images/remove_volume.png)
 
 - Remove the policy
 
-![Image](images/vsan/remove_policy.png)
+![Image](images/remove_policy.png)
