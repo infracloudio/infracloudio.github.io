@@ -7,12 +7,11 @@ topnav:
       url: index.html
     - title: FAQs
       url: faq.html
-    - title: Downloads
-      external_url: https://my.vmware.com/web/vmware/downloads
+
 
 #Topnav dropdowns
 topnav_dropdowns:
-- title: Downloads
+- title: VMware topdowns
   folders:
     - title: Downloads
       folderitems:
@@ -20,5 +19,14 @@ topnav_dropdowns:
           external_url: https://store.docker.com/plugins/vsphere-docker-volume-service
         - title: VIB
           external_url: https://bintray.com/vmware/vDVS/VIB
+    - title: Contact Us
+      folderitems:
+        - title: Email
+          external_url: containers@vmware.com
+        - title: Slack
+          external_url: slack.vmware.com
+        - title: Github Issues
+          external_url: https://github.com/vmware/docker-volume-vsphere/issues
+     
 
 
