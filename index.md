@@ -33,7 +33,7 @@ Some of key features of the vDVS are:
 This service is integrated with [Docker Volume Plugin framework](https://docs.docker.com/engine/extend/plugins_volume/). It does not need credential management or configuration management. 
 
 
-** Documentation Version **
+## Documentation Version
 
 The documentation here is for the latest release. The current master documentation can be found in markdown format in the [documentation folder](https://github.com/vmware/docker-volume-vsphere/tree/master/docs). For older releases, browse to [releases](https://github.com/vmware/docker-volume-vsphere/releases) select the release, click on the tag for the release and browse the docs folder.
 
