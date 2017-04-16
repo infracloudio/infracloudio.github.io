@@ -4,19 +4,17 @@ title: Prerequisites
 
 This section enumerates the prerequisites like environments, packages required to use vSphere Docker Volume plugin.
 
-## VMWare Environment
+## vSphere Environment
 
 vSphere Docker Volume Service can be used with vSphere environment or Photon Platform but in all section it is implicit that we are refering to vSphere environment. There is separate section for Photon platform. 
 
-## Docker
+## vSphere Docker Volume Service
 On all the machines where you want to operate the vDVS, you will need docker-engine installed. You can get the installable specific to your OS form Docker website.
 
-## Docker volume plugin
 Docker engine can be extended by using the plugin framework. Docker provides a plugin API and standard interfaces which can be used to extend docker engine’s core functionality. Docker volume plugins specifically are targeted at storage related integrations and can be used to work with underlying storage technologies. You can read more about the [Docker’s plugin system](https://docs.docker.com/engine/extend/).
 
 VMWare uses the volume plugin mechanism to enable vSphere docker volume service (vDVS) for vSphere environments. 
 
-## vSphere Docker Volume Service components
 vSphere Docker Volume Service comprises of Docker plugin and vSphere Installation Bundle which bridges the Docker and vSphere ecosystems. 
 
 ### Managed Plugin
@@ -27,7 +25,7 @@ The managed plugin on [Docker store](https://store.docker.com/plugins/vsphere-do
 The second component of the volume service is the VIB which needs to be installed on ESXi server.
 The VIB for ESXi server [available here](https://bintray.com/vmware/vDVS)
 
-## Storage Technologies: Introduction
+## vSphere supported Storage: Introduction
 
 We might refer to the terms related to storage technologies later in the documentation, but this is a good place to understand various technologies and know more about them if you want to.
 
