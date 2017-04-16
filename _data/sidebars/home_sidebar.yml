@@ -72,6 +72,9 @@ entries:
         - title: Photon Platform
           url: /photon.html
           output: web
+        - title: Related Blogs
+          url: /blogs.html
+          output: web
         - title: Known Issues
           url: /known-issues.html
           output: web
