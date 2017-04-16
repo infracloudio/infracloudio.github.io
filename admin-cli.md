@@ -72,7 +72,8 @@ Uuid                                  Name       Description                 Def
 
 ```
 
-###### Help
+<b>Help</b>
+
 ```
 [root@localhost:~] /usr/lib/vmware/vmdkops/bin/vmdkops_admin.py vmgroup create -h
 usage: vmdkops_admin.py vmgroup create [-h] --name NAME
@@ -88,7 +89,8 @@ optional arguments:
                         A list of VM names to place in this vmgroup
 
 ```
-#### List
+<b>List</b>
+
 List existing vmgroups, the datastores vmgroups have access to and the VMs assigned.
 ```
 [root@localhost:~] usr/lib/vmware/vmdkops/bin/vmdkops_admin.py vmgroup ls
@@ -99,7 +101,7 @@ Uuid                                  Name       Description                 Def
 
 ```
 
-##### Help
+<b>Help</b>
 ```
 [root@localhost:~] /usr/lib/vmware/vmdkops/bin/vmdkops_admin.py vmgroup ls -h
 usage: vmdkops_admin.py vmgroup ls [-h]
@@ -108,7 +110,8 @@ optional arguments:
   -h, --help  show this help message and exit
 ```
 
-#### Update
+<b>Update</b>
+
 Update existing vmgroup. This command allows to update "Description" and "Default_datastore" fields, or rename an existing vmgroup.
 Sample:
 ```
@@ -128,7 +131,7 @@ Uuid                                  Name           Description                
 
 ```
 
-#### Help
+<b>Help</b>
 ```
 [root@localhost:~] /usr/lib/vmware/vmdkops/bin/vmdkops_admin.py vmgroup  update -h
 usage: vmdkops_admin.py vmgroup update [-h] --name NAME
@@ -148,7 +151,8 @@ optional arguments:
 
 ```
 
-#### Remove
+<b>Remove</b>
+
 Remove a vmgroup, optionally all volumes for a vmgroup can be removed as well.
 
 Sample:
@@ -163,7 +167,7 @@ Uuid                                  Name      Description                 Defa
 11111111-1111-1111-1111-111111111111  _DEFAULT  This is a default vmgroup
 ```
 
-#### Help
+<b>Help</b>
 ```
 [root@localhost:~] /usr/lib/vmware/vmdkops/bin/vmdkops_admin.py vmgroup rm -h
 usage: vmdkops_admin.py vmgroup rm [-h] --name NAME [--remove-volumes]
@@ -178,7 +182,8 @@ optional arguments:
 
 ### Virtual Machine
 
-#### Add
+<b>Add</b>
+
 Add a VM to a vmgroup. A VM can only access the datastores for the vmgroup it is assigned to.
 VMs can be assigned to only one vmgroup at a time.
 ```
@@ -193,7 +198,8 @@ vmgroup vm add succeeded
 
 ```
 
-#### List
+<b>List</b>
+
 ```
 [root@localhost:~] /usr/lib/vmware/vmdkops/bin/vmdkops_admin.py vmgroup vm ls --name=vmgroup1
 Uuid                                  Name
@@ -202,7 +208,8 @@ Uuid                                  Name
 564d99a2-4097-9966-579f-3dc4082b10c9  photon7
 ```
 
-#### Remove
+<b>Remove</b>
+
 Remove a VM from a vmgroup's list of VMs. VM will no longer be able to access the volumes created for the vmgroup.
 ```
 [root@localhost:~] /usr/lib/vmware/vmdkops/bin/vmdkops_admin.py vmgroup vm rm --name=vmgroup1 --vm-list=photon7
@@ -214,7 +221,8 @@ Uuid                                  Name
 
 ```
 
-### Replace
+<b>Replace</b>
+
 Replace VMs from a vmgroup's list of VMs. VMs which are replaced will no longer be able to access the volumes created for the vmgroup.
 ```
 [root@localhost:~] /usr/lib/vmware/vmdkops/bin/vmdkops_admin.py vmgroup vm ls --name=vmgroup1
@@ -231,7 +239,7 @@ Uuid                                  Name
 564d99a2-4097-9966-579f-3dc4082b10c9  photon7
 ```
 
-#### Help
+<b>Help</b>
 ```
 [root@localhost:~] /usr/lib/vmware/vmdkops/bin/vmdkops_admin.py vmgroup vm -h
 usage: vmdkops_admin.py vmgroup vm [-h] {rm,add,ls,replace} ...
@@ -248,11 +256,12 @@ optional arguments:
 
 ```
 
-### Access
+<b>Access</b>
+
 Change the access control for a vmgroup.
 This includes ability to grant privileges & set resource consumption limits for a datastore.
 
-#### Help
+<b>Help</b>
 ```bash
 [root@localhost:~] /usr/lib/vmware/vmdkops/bin/vmdkops_admin.py vmgroup access -h
 usage: vmdkops_admin.py vmgroup access [-h] {rm,add,set,ls} ...
@@ -269,7 +278,8 @@ optional arguments:
 
 ```
 
-#### Add
+<b>Add</b>
+
 Grants datastore access to a vmgroup.
 
 The datastore will be automatically set as "default_datastore" for the vmgroup
@@ -334,7 +344,7 @@ datastore1  False         500.00MB         1.00GB
 datastore2  True          500.00MB         1.00GB
 ```
 
-##### Help
+<b>Help</b>
 ```bash
 [root@localhost:~] /usr/lib/vmware/vmdkops/bin/vmdkops_admin.py vmgroup access add -h
 usage: vmdkops_admin.py vmgroup access add [-h]
@@ -361,7 +371,8 @@ optional arguments:
 
 ```
 
-#### List
+<b>List</b>
+
 List the current access control granted to a vmgroup.
 
 When displaying the result keep in mind:
@@ -376,7 +387,7 @@ datastore1  False         500.00MB         1.00GB
 datastore2  True          500.00MB         1.00GB
 ```
 
-##### Help
+<b>Help</b>
 ```bash
 [root@localhost:~] /usr/lib/vmware/vmdkops/bin/vmdkops_admin.py vmgroup access ls -h
 usage: vmdkops_admin.py vmgroup access ls [-h] --name NAME
@@ -387,7 +398,8 @@ optional arguments:
 
 ```
 
-#### Remove
+<b>Remove</b>
+
 Remove access to a datastore for a vmgroup.
 ```bash
 [root@localhost:~] /usr/lib/vmware/vmdkops/bin/vmdkops_admin.py vmgroup access ls --name=vmgroup1
@@ -405,7 +417,7 @@ Datastore   Allow_create  Max_volume_size  Total_size
 datastore2  True          500.00MB         1.00GB
 ```
 
-##### Help
+<b>Help</b>
 ```bash
 [root@localhost:~] /usr/lib/vmware/vmdkops/bin/vmdkops_admin.py vmgroup  access rm -h
 usage: vmdkops_admin.py vmgroup access rm [-h] --name NAME --datastore
@@ -419,7 +431,8 @@ optional arguments:
 
 ```
 
-#### Set
+<b>Set</b>
+
 Set command allows to change the existing access control in place for a vmgroup.
 
 Sample:
@@ -445,7 +458,7 @@ datastore1  True          1000.00MB        2.00GB
 
 ```
 
-##### Help
+<b>Help</b>
 ```
 [root@localhost:~] /usr/lib/vmware/vmdkops/bin/vmdkops_admin.py vmgroup access set -h
 usage: vmdkops_admin.py vmgroup access set [-h]
@@ -474,7 +487,7 @@ optional arguments:
 
 ## Volume
 
-#### Help
+<b>Help</b>
 ```bash
 [root@localhost:~] /usr/lib/vmware/vmdkops/bin/vmdkops_admin.py volume ls -h
 usage: vmdkops_admin.py volume ls [-h] [-c Col1,Col2,...]
@@ -486,7 +499,8 @@ optional arguments:
                     'policy', 'capacity', 'used']
 ```
 
-#### List All
+<b>List All</b>
+
 List all properties for all Docker volumes that exist on datastores accessible to the host.
 
 ```bash
@@ -515,7 +529,7 @@ vol1    datastore1  N/A       100MB     13MB  ext4        N/A     thin         d
 vol2    datastore1  N/A       100MB     13MB  ext4        N/A     thin         detached     read-write  independent_persistent  photon-6    Sun Sep 11 22:48:23 2016
 ```
 
-#### List selected columns
+<b>List Selected Columns</b>
 
 Show only the selected columns.
 
@@ -530,7 +544,8 @@ vol        datastore1  detached
 Note that the that the choices are given in a comma separated list with no spaces, and are shown in
 the help given above with `vmdkops_admin ls -h`.
 
-### Set
+<b>Set</b>
+
 Modify attribute settings on a given volume. The volume is identified by its name, vmgroup_name which the volume belongs to and datastore,
 for example if the volume name is `container-vol` then the volume is specified as "container-vol@datastore-name".
 The attributes to set/modify are specified as a comma separated list as "<attr1>=<value>, <attr2>=<value>....". For example,
@@ -584,7 +599,7 @@ vol2    datastore1  N/A       100MB     13MB  ext4        N/A     thin         d
 
 Create, configure and show the VSAN policy names and their corresponding VSAN policy strings. Also show whether or not they are in use.
 
-#### Help
+<b>Help</b>
 ```bash
 [root@localhost:~] /usr/lib/vmware/vmdkops/bin/vmdkops_admin.py policy -h
 usage: vmdkops_admin.py policy [-h] {rm,create,ls,update} ...
@@ -601,7 +616,7 @@ optional arguments:
   -h, --help            show this help message and exit
 ```
 
-#### Create
+<b>Create</b>
 
 Create a VSAN storage policy.
 
@@ -614,7 +629,7 @@ Note that the VSAN storage policy string given with `--content` is a standard VS
 string.  Please refer to the [VSAN documentation](https://pubs.vmware.com/vsphere-60/index.jsp?topic=%2Fcom.vmware.vcli.ref.doc%2Fesxcli_vsan.html)
 for storage policy options.
 
-#### List
+<b>List</b>
 
 List all VSAN storage policies.
 
@@ -629,7 +644,7 @@ When creating a virtual disk using `docker volume create`, the policy name shoul
 option such as `docker volume create --driver=vsphere --name=some-vol -o vsan-policy-name=some-policy`.
 The number of virtual disks using the policy will then show up in the `Active` column.
 
-#### Update
+<b>Update</b>
 
 Update a VSAN storage policy.
 
@@ -644,7 +659,7 @@ This operation may take a while. Please be patient.
 Successfully updated policy: some-policy
 ```
 
-#### Remove
+<b>Remove</b>
 
 Remove a VSAN storage policy. Note that a storage policy cannot be removed if it is currently in use
 by one or more virtual disks.
