@@ -7,6 +7,8 @@ topnav:
       url: index.html
     - title: FAQs
       url: faq.html
+    - title: Contact Us
+      url: contactus.html
 
 
 #Topnav dropdowns
@@ -21,14 +23,6 @@ topnav_dropdowns:
           external_url: https://bintray.com/vmware/vDVS
         - title: RPM
           external_url: https://bintray.com/vmware/vDVS/vDVS_RPM
-    - title: Contact Us
-      folderitems:
-        - title: Email
-          external_url: containers@vmware.com
-        - title: Slack
-          external_url: slack.vmware.com
-        - title: Github Issues
-          external_url: https://github.com/vmware/docker-volume-vsphere/issues
-     
+
 
 
