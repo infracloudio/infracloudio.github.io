@@ -27,7 +27,7 @@ entries:
   - title: User Guide
     output: web
     folderitems:
-      - title: Management of docker volumes
+      - title: Docker Volume Management
         url: /docker-volume-cli.html
         output: web
       - title: Docker Compatibility
