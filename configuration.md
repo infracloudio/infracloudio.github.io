@@ -2,13 +2,9 @@
 title: Configuration
 ---
 
-vSphere Docker Volume Service consists of two components the VIB and Docker plugin. The Docker plugin requires configuration which is described in this section. The docker volume plugin uses VMDK based volumes and are attached to container.
+vSphere Docker Volume Service consists of two components the VIB and Docker plugin. Only the Docker plugin requires configuration which is described in this section. The docker volume plugin uses VMDK based volumes and are attached to container.
 
 The configurations used by a driver while performing operations are read from a JSON file and the default location where it looks for it /etc/docker-volume-vsphere.conf. You can also override it to use  a different configuration file by providing --config option and the full path to the file. Finally the parameters passed on the CLI override the one from the configuration file.
-
-## vSphere Docker Volume Plugin Configuration
-
-The vSphere volume plugin can be used on a standalone or cluster of ESXi servers via the ESXi service. ESXi service needs to be installed and running on all servers. The volumes are created on ESXi host using the VIM (Virtual Infrastructure Management) APIs.
 
 The configuration for  Docker volume plugin require the driver type which can be one of vsphere or vmdk (For backwards compatibility). You can also provide the log related configurations.
 
@@ -31,7 +27,7 @@ The configuration for  Docker volume plugin require the driver type which can be
   <tbody>
     <tr>
       <td>driver</td>
-      <td>The name of Driver – vsphere/vmdk for vSphere driver</td>
+      <td>The name of Driver – vsphere for vSphere driver</td>
     </tr>
     <tr>
       <td>MaxLogAgeDays</td>
