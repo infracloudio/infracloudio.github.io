@@ -17,6 +17,9 @@ Although it is relatively easy to run stateless Microservices using container te
 * Certain applications have a strong sense of identity (For example. Kafka, Elastic etc.) and the disk used by a container with certain identity is tied to it. It is important that if a container with a certain ID gets re-scheduled for some reason then the disk only associated with that ID is re-attached on a new host.
 
 ## vSphere Docker Volume Service
+
+![Image](images/vSphereDatastore.jpg)
+
 vSphere docker volume service technology enables running stateful containers backed by storage technology of choice in a vSphere environment. vSphere Docker Volume Service which works with proven storage technologies from VMWare and is easy to install and use from end user perspective while retaining visibility and control in hands of a vSphere administrator.
 
 Some of key features of the vDVS are:
@@ -28,8 +31,6 @@ Some of key features of the vDVS are:
 * **Storage Policy Management**: vSphere Docker Volume Service brings vSphere's advanced storage feature like policy management to Docker ecosystem.
 
 This service is integrated with [Docker Volume Plugin framework](https://docs.docker.com/engine/extend/plugins_volume/). It does not need credential management or configuration management. 
-
-![Image](images/vSphereDatastore.jpg)
 
 vDVS abstracts underlying enterprise class storage and makes it available as docker volumes to a cluster of hosts running in vSphere environment
 
