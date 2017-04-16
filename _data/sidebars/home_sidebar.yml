@@ -45,7 +45,7 @@ entries:
       - title: Multi-tenancy Support
         url: /tenancy.html
         output: web
-      - title: Storage policy based management for container volumes
+      - title: Storage Policy Based Management
         url: /policy-based-management.html
         output: web
   - title: Applications & Examples
