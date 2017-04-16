@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Admin CLI Reference
 ---
 
 ## Introduction
@@ -21,7 +21,7 @@ of their usage.
 
 ## Vmgroup
 
-#### Help
+<b>Help</b>
 ```bash
 [root@localhost:~] /usr/lib/vmware/vmdkops/bin/vmdkops_admin.py vmgroup -h
 usage: vmdkops_admin.py vmgroup [-h] {create,vm,update,access,ls,rm} ...
@@ -40,7 +40,7 @@ optional arguments:
   -h, --help            show this help message and exit
 ```
 
-#### Create
+<b>Create</b>
 A vmgroup named "_DEFAULT" will be created automatically post install.
 
 Creates a new named vmgroup and optionally assigns VMs. Valid vmgroup name is only allowed to be "[a-zA-Z0-9_][a-zA-Z0-9_.-]*"
