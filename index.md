@@ -1,7 +1,7 @@
 ---
 title: vSphere Docker Volume Service
 ---
-<a href=""><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3-us-west-1.amazonaws.com/vmware-ic/docker-cert.jpeg" width="10" height="10" alt=" "></a>
+![Image](images/docker-cert.jpeg)
 
 ## Introduction 
 
