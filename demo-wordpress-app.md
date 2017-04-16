@@ -1,9 +1,8 @@
 ---
-title: Running Wordpress with MySQL backemn
+title: Running Wordpress with MariaDB
 ---
 
 
-## Running Wordpress with MySQL backemnd
 
 In this example we are going to run a Wordpress stack with Maria DB as the backend for data persistence. The example does not use any clustering technology such as Swarm mode. The idea is here to simply demonstrate the usage of volumes in docker-compose specs
 
