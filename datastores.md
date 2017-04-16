@@ -24,7 +24,7 @@ $esx ls /vmfs/volumes/vsanDatastore/dockvols
 defaultDsVolume.vmdk
 ```
 
-## Custom Datastore
+## Custom datastore
 
 To choose a datastore other than one in which VM is hosted, you have to specify name and append the datastore name with a ```@``` symbol.
 
