@@ -21,7 +21,7 @@ of their usage.
 
 ## Vmgroup
 
-### Help
+#### Help
 ```bash
 [root@localhost:~] /usr/lib/vmware/vmdkops/bin/vmdkops_admin.py vmgroup -h
 usage: vmdkops_admin.py vmgroup [-h] {create,vm,update,access,ls,rm} ...
@@ -40,7 +40,7 @@ optional arguments:
   -h, --help            show this help message and exit
 ```
 
-### Create
+#### Create
 A vmgroup named "_DEFAULT" will be created automatically post install.
 
 Creates a new named vmgroup and optionally assigns VMs. Valid vmgroup name is only allowed to be "[a-zA-Z0-9_][a-zA-Z0-9_.-]*"
@@ -71,7 +71,7 @@ Uuid                                  Name       Description                 Def
 
 ```
 
-#### Help
+###### Help
 ```
 [root@localhost:~] /usr/lib/vmware/vmdkops/bin/vmdkops_admin.py vmgroup create -h
 usage: vmdkops_admin.py vmgroup create [-h] --name NAME
@@ -87,7 +87,7 @@ optional arguments:
                         A list of VM names to place in this vmgroup
 
 ```
-### List
+#### List
 List existing vmgroups, the datastores vmgroups have access to and the VMs assigned.
 ```
 [root@localhost:~] usr/lib/vmware/vmdkops/bin/vmdkops_admin.py vmgroup ls
@@ -98,7 +98,7 @@ Uuid                                  Name       Description                 Def
 
 ```
 
-#### Help
+##### Help
 ```
 [root@localhost:~] /usr/lib/vmware/vmdkops/bin/vmdkops_admin.py vmgroup ls -h
 usage: vmdkops_admin.py vmgroup ls [-h]
@@ -107,7 +107,7 @@ optional arguments:
   -h, --help  show this help message and exit
 ```
 
-### Update
+#### Update
 Update existing vmgroup. This command allows to update "Description" and "Default_datastore" fields, or rename an existing vmgroup.
 Sample:
 ```
@@ -147,7 +147,7 @@ optional arguments:
 
 ```
 
-### Remove
+#### Remove
 Remove a vmgroup, optionally all volumes for a vmgroup can be removed as well.
 
 Sample:
