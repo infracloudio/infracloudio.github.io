@@ -3,6 +3,8 @@ title: Docker Compatibility
 ---
 <a href=""><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github.com/vmware/docker-volume-vsphere/raw/master/docs/misc/Docker%20Certified.png" width="10" height="10" alt=" "></a>
 
+vDVS is fully compatible with Docker and this section demonstrates working examples with docker's commands and concepts.
+
 ## Docker Certified Plugin
 vDVS is a docker certified plugin and it integrates with Docker volume plugin framework. You can also find details on the [Docker store](https://store.docker.com/plugins/vsphere-docker-volume-service)
 
