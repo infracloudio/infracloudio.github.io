@@ -57,14 +57,11 @@ entries:
         - title: HA DB in Docker Swarm mode
           url: /demo-ha-swarm.html
           output: web
-        - title: Docker Service with vSphere volumes
+        - title: Running MongoDB (Docker Service) with vSphere volume
           url: /docker-service.html
           output: web
-        - title: Docker Stacks with vSphere volumes
+        - title: Running an Example App with Docker Stacks
           url: /docker-stacks.html
-          output: web
-        - title: Multi-tenancy Example
-          url: /tenancy-eg.html
           output: web
   - title: Miscellaneous
     output: web
