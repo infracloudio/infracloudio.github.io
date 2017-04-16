@@ -13,7 +13,7 @@ You can specify the size of volume while creating a volume. Supported units of s
 docker volume create --driver=vsphere --name=MyVolume -o size=10gb
 ```
 
-#### File System Type (fstype)
+##### File System Type (fstype)
 You can specify the filesystem which will be used it to create the volumes. The docker plugin will look for existing filesystesm in /sbin/mkfs.fstype but if the specified filesystem is not found then it will return a list for which it has found mkfs. The default filesystem if not specified is ext4.
 
 ```
@@ -22,7 +22,7 @@ docker volume create --driver=vsphere --name=MyVolume -o size=10gb -o fstype=ext
 
 ```
 
-#### vsan-policy-name
+##### vsan-policy-name
 For the vSphere driver you can specify the vsan policy name. The policy itself must be created or should be present before using this in volume creation. You can use vmdkops-admin-cli for creation of policy. The syntax for passing policy name while creating volume looks like this:
 ```
 docker volume create --driver=vsphere --name=MyVolume -o size=10gb -o vsan-policy-name=allflash
@@ -31,7 +31,7 @@ docker volume create --driver=vsphere --name=MyVolume -o size=10gb -o vsan-polic
 
 You can find more details about policy management using vSAN in page [Storage policy based management](policy-based-management.md)
 
-#### Disk Format (diskformat)
+##### Disk Format (diskformat)
 The docker volumes are backed by VMDK and there are types of VMDK. At the moment following types of VMDKs are supported:
 
 <table class="table table-striped table-hover ">
@@ -58,7 +58,7 @@ The docker volumes are backed by VMDK and there are types of VMDK. At the moment
 </table>
 
 
-#### Disk Modes (attach-as)
+##### Disk Modes (attach-as)
 Docker volumes used in vDVS are backed by VMDKs. VMDKs are attached to hosts on which containers are running. These VMDKs can be attached in [different modes.](http://cormachogan.com/2013/04/16/what-are-dependent-independent-disks-persistent-and-non-persisent-modes/)
 
 1. Persistent mode: In persistent mode the VMDK becomes part of VM the snapshot if a snapshot of the VM is taken while VMDK was attached.
@@ -69,7 +69,7 @@ docker volume create --driver=vsphere --name=MyVolume -o size=10gb -o attach-as=
 docker volume create --driver=vsphere --name=MyVolume -o size=10gb -o attach-as=persistent
 ```
 
-#### Volume Cloning (clone-from)
+##### Volume Cloning (clone-from)
 
 When creating a new volume, you can specificy a volume to clone and create a new one. This is a complete new volume of which you can change all parameters except size and fstype.
 
