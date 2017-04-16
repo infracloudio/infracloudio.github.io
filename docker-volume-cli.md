@@ -1,5 +1,5 @@
 ---
-title: Using the Service in Docker
+title: Docker Volume Management
 ---
 ## Using the Service in Docker
 
@@ -7,7 +7,7 @@ title: Using the Service in Docker
 The docker volume commands are completely supported by vDVS plugin. This section demonstrates use of various commands with examples.
 
 
-#### Size
+*Size*
 You can specify the size of volume while creating a volume. Supported units of sizes are mb, gb and tb. By default if you don’t specify the size, a 100MB volume is created.
 
 ```
