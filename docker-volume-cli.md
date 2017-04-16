@@ -69,7 +69,7 @@ docker volume create --driver=vsphere --name=MyVolume -o size=10gb -o attach-as=
 docker volume create --driver=vsphere --name=MyVolume -o size=10gb -o attach-as=persistent
 ```
 
-##### Volume Cloning (clone-from)
+##### Clone Volume (clone-from)
 
 When creating a new volume, you can specificy a volume to clone and create a new one. This is a complete new volume of which you can change all parameters except size and fstype.
 
@@ -79,7 +79,7 @@ docker volume create --driver=vsphere --name=CloneVolume -o clone-from=MyVolume 
 docker volume create --driver=vsphere --name=CloneVolume -o clone-from=MyVolume -o diskformat=thin (default)
 ```
 
-## Listing Volumes
+## List Volumes
 Docker volume list can be used to volume names & their DRIVER type
 ```
 docker volume ls
@@ -89,7 +89,7 @@ vsphere                minio1@vsanDatastore
 vsphere                minio2@vsanDatastore
 photon                 redis-data@vsanDatastore
 ```
-## Docker volume inspect
+## Inspect Volume
 You can use `docker volume inspect` command to see vSphere attributes of a particular volume.
 ```
 docker volume create —driver=vmdk —name=MyVolume -o size=2gb -o vsan-policy-name=myPolicy -o fstype=xfs
@@ -130,9 +130,19 @@ docker volume inspect MyVolume
 Note: For disk formats zeroedthick and thin, the allocated size would be total size plus the size of replicas.
 
 
-## Remove volume
+## Remove Volume
 You can remove the volume with following command
 ```
 # docker volume rm db_data
 db_data
 ```
+
+## Prune Volume
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">Docker volume prune</h3>
+  </div>
+  <div class="panel-body">
+    Docker volume prune is not supported
+  </div>
+</div>
