@@ -20,7 +20,7 @@ Installation Result
    VIBs Skipped:
 ```
 
-## Installation on Docker hosts
+## Installation on Docker Hosts
 
 vDVS plugin can be installed on Docker hosts like any docker plugin installation. You will need docker version **1.13/17.03 or above** on the VM. In a large pool of nodes, you can push the plugin installation to multiple VM through a configuration management tool such as Ansible/Salt or using a remote shell session. The installation of plugin is really simple and we will walk through the steps to install/uninstall, enable and verify the plugin installation. 
 
