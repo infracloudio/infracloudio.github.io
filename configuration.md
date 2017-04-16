@@ -20,7 +20,7 @@ The configuration for  Docker volume driver require the driver type which can be
     "Driver": "vsphere"
     "MaxLogAgeDays": 28,
     "MaxLogSizeMb": 100,
-    "LogPath": "/var/log/docker-volume-vsphere.log",
+    "LogPath": "/var/log",
     "LogLevel": "info"
 }
 ```
@@ -54,10 +54,3 @@ The configuration for  Docker volume driver require the driver type which can be
     </tr>
 </tbody>
 </table>
-
-
-
-
-## Deployment strategies
-
-As you might have noticed, the installation of plugins is fairly straightforward but the configurations for the plugin will vary from host to host and based on your topology. It is best to deploy the plugin and configuration files through a configuration management tool such as Ansible/Salt/Puppet etc. so that you can use configuration templates and produce the configurations files for each host based on knowledge of topology and architecture. 

@@ -31,7 +31,7 @@ entries:
         url: /docker-volume-cli.html
         output: web
       - title: Docker Compatibility
-        url: /swarm-cluster.html
+        url: /docker-compatibility.html
         output: web
   - title: Admin Guide
     output: web
