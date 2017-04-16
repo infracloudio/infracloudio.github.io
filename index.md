@@ -1,10 +1,9 @@
 ---
 title: vSphere Docker Volume Service
 ---
+<a href=""><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3-us-west-1.amazonaws.com/vmware-ic/docker-cert.jpeg" width="10" height="10" alt=" "></a>
 
 ## Introduction 
-
-<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github.com/vmware/docker-volume-vsphere/raw/master/docs/misc/Docker%20Certified.png" width="6" height="6" alt=" ">
 
 Containers have changed the way applications are packaged and deployed. Not only containers are efficient from infrastructure utilization point of view, they also provide strong isolation between process on same host. They are lightweight and once packaged can run anywhere. Docker is the most commonly used container runtime technology and this user guide outlines how vSphere is compatible with Docker ecosystem. 
 
