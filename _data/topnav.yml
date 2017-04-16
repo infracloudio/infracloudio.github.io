@@ -20,7 +20,7 @@ topnav_dropdowns:
         - title: Docker Plugin
           external_url: https://store.docker.com/plugins/vsphere-docker-volume-service
         - title: VIB
-          external_url: https://bintray.com/vmware/vDVS
+          external_url: https://bintray.com/vmware/vDVS/VIB/_latestVersion
         - title: RPM
           external_url: https://bintray.com/vmware/vDVS/vDVS_RPM
 
