@@ -23,7 +23,7 @@ The managed plugin on [Docker store](https://store.docker.com/plugins/vsphere-do
 
 ### vSphere Installation Bundle (VIB)
 The second component of the volume service is the VIB which needs to be installed on ESXi server.
-The VIB for ESXi server [available here](https://bintray.com/vmware/vDVS)
+The VIB for ESXi server [available here](https://bintray.com/vmware/vDVS/VIB/_latestVersion)
 
 ## vSphere supported Storage
 
