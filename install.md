@@ -27,7 +27,7 @@ vDVS plugin can be installed on Docker hosts like any docker plugin installation
 The plugin is available as a docker image on the public docker registry but if you are using a private registry, you will have to point to the appropriate URL of the image.
 
 <div class="well">
-**Note:** We have discontinued the DEB/RPM based installation of the Docker plugin.
+Note: We have discontinued the DEB/RPM based installation of the Docker plugin.
 </div>
 
 * **To install the plugin**
