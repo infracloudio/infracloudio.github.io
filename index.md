@@ -29,6 +29,9 @@ Some of key features of the vDVS are:
 
 This service is integrated with [Docker Volume Plugin framework](https://docs.docker.com/engine/extend/plugins_volume/). It does not need credential management or configuration management. 
 
+![Image](images/vSphereDatastore.jpg)
+
+vDVS abstracts underlying enterprise class storage and makes it available as docker volumes to a cluster of hosts running in vSphere environment
 
 ## Documentation Version
 

@@ -75,6 +75,9 @@ entries:
         - title: Related Blogs
           url: /blogs.html
           output: web
+        - title: Video Illustration
+          url: /videos.html
+          output: web  
         - title: Known Issues
           url: /known-issues.html
           output: web
