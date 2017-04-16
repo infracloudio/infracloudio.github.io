@@ -12,8 +12,8 @@ Storage Policies capture storage requirements, such as performance and availabil
 - Allows defining application specific storage requirements
 - Reduces wastage of storage and efficient use of storage tiers
 
-## Introduction to SPBM for vSAN
-As you might be already aware, vSAN is a distributed layer of software that runs natively as a part of the ESXi hypervisor. vSAN aggregates local or direct-attached capacity devices of a host cluster and creates a single storage pool shared across all hosts in the vSAN cluster. While supporting VMware features that require shared storage, such as HA, vMotion, and DRS, vSAN eliminates the need for external shared storage and simplifies storage configuration and virtual machine provisioning activities. vSAN works with virtual machine storage policies to support a virtual machine-centric storage approach. When provisioning a virtual machine, if there is no explicit assignment of a storage policy to the virtual machine, a generic system defined storage policy, called the vSAN Default Storage Policy is automatically applied to the virtual machine.
+## vSAN Overview
+vSAN is a distributed layer of software that runs natively as a part of the ESXi hypervisor. vSAN aggregates local or direct-attached capacity devices of a host cluster and creates a single storage pool shared across all hosts in the vSAN cluster. While supporting VMware features that require shared storage, such as HA, vMotion, and DRS, vSAN eliminates the need for external shared storage and simplifies storage configuration and virtual machine provisioning activities. vSAN works with virtual machine storage policies to support a virtual machine-centric storage approach. When provisioning a virtual machine, if there is no explicit assignment of a storage policy to the virtual machine, a generic system defined storage policy, called the vSAN Default Storage Policy is automatically applied to the virtual machine.
 
 
 As described in [official documentation](https://pubs.vmware.com/vsphere-65/index.jsp?topic=%2Fcom.vmware.vsphere.virtualsan.doc%2FGUID-08911FD3-2462-4C1C-AE81-0D4DBC8F7990.html), vSAN exposes multiple storage capabilities.
