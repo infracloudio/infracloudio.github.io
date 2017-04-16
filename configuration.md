@@ -8,11 +8,11 @@ The Docker volume plugin at the moment supports vSphere and Photon platforms. Al
 
 The configurations used by a driver while performing operations are read from a JSON file and the default location where it looks for it /etc/docker-volume-vsphere.conf. You can also override it to use  a different configuration file by providing --config option and the full path to the file. Finally the parameters passed on the CLI override the one from the configuration file.
 
-## Docker Volume Driver
+## vSphere Docker Volume Plugin Configuration
 
-The vSphere volume driver can be used on a standalone or cluster of ESXi servers via the ESXi service. ESXi service needs to be installed and running on all servers. The volumes are created on ESXi host using the VIM (Virtual Infrastructure Management) APIs.
+The vSphere volume plugin can be used on a standalone or cluster of ESXi servers via the ESXi service. ESXi service needs to be installed and running on all servers. The volumes are created on ESXi host using the VIM (Virtual Infrastructure Management) APIs.
 
-The configuration for  Docker volume driver require the driver type which can be one of vsphere or vmdk (For backwards compatibility). You can also provide the log related configurations.
+The configuration for  Docker volume plugin require the driver type which can be one of vsphere or vmdk (For backwards compatibility). You can also provide the log related configurations.
 
 ```
 {
@@ -33,7 +33,7 @@ The configuration for  Docker volume driver require the driver type which can be
   <tbody>
     <tr>
       <td>driver</td>
-      <td>The name of Driver – vsphere/vmdk for vSphere driver and photon for the photon driver</td>
+      <td>The name of Driver – vsphere/vmdk for vSphere driver</td>
     </tr>
     <tr>
       <td>MaxLogAgeDays</td>
