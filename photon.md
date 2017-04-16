@@ -1,20 +1,18 @@
 ---
 title: Photon Platform Integration
 ---
-The docker volume plugin also supports Photon platform. The plugin supports all volume provisioning and managenment operations, defined by the Docker Volume plugin interface, on both platforms (vSphere and Photon). The volumes created in photon platform are done via the open Photon platform API using the Photon controller. 
+The docker volume plugin also supports Photon platform. The plugin supports all volume provisioning and managenment operations, defined by the Docker Volume plugin interface, on both platforms (vSphere and Photon).Creation of volumes in photon platform is done via the open Photon platform API using the Photon controller. 
 
 ## Configuration: Photon Driver
 
-The configurations used by a driver while performing operations are read from a JSON file and the default location where it looks for it /etc/docker-volume-vsphere.conf. You can also override it to use  a different configuration file by providing --config option and the full path to the file. Finally the parameters passed on the CLI override the one from the configuration file.
-
-The docker photon volume driver creates and manages the volumes on a photon platform. Photon platform API is used to create and manage volumes. You need following configurations for photon driver in the configuration file.
+The configurations used by a driver while performing operations are read from a JSON file and the default location where it looks for it /etc/docker-volume-vsphere.conf. You can also override it to use  a different configuration file by providing --config option and the full path to the file. Finally the parameters passed on the CLI override the one from the configuration file. You need following configurations for photon driver in the configuration file.
 
 ```
 {
-    "Driver": "<driver name - vsphere/vmdk/photon>"
+    "Driver": "vmdk"
     "MaxLogAgeDays": 28,
     "MaxLogSizeMb": 100,
-    "LogPath": "/var/log/docker-volume-vsphere.log",
+    "LogPath": "/var/log",
     "LogLevel": "info",
     "Target" : "http://<photon_controller_ip>:<target port>",
     "Project" : "<21-digit photon project ID>",
@@ -64,15 +62,15 @@ The docker volume commands are completely supported by vDVS plugin. This section
 You can specify the size of volume while creating a volume. Supported units of sizes are mb, gb and tb. By default if you don’t specify the size, a 100MB volume is created.
 
 ```
-docker volume create --driver=vsphere --name=MyVolume -o size=10gb
+docker volume create --driver=photon --name=MyVolume -o size=10gb
 ```
 
 #### File System Type (fstype)
 You can specify the filesystem which will be used it to create the volumes. The docker plugin will look for existing filesystesm in /sbin/mkfs.fstype but if the specified filesystem is not found then it will return a list for which it has found mkfs. The default filesystem if not specified is ext4.
 
 ```
-docker volume create --driver=vsphere --name=MyVolume -o size=10gb -o fstype=xfs
-docker volume create --driver=vsphere --name=MyVolume -o size=10gb -o fstype=ext4 (default)
+docker volume create --driver=photon --name=MyVolume -o size=10gb -o fstype=xfs
+docker volume create --driver=photon --name=MyVolume -o size=10gb -o fstype=ext4 (default)
 
 ```
 
@@ -94,45 +92,38 @@ vsphere                minio2@vsanDatastore
 photon                 redis-data@vsanDatastore
 ```
 ### Docker volume inspect
-You can use `docker volume inspect` command to see vSphere attributes of a particular volume.
+You can use `docker volume inspect` command to see attributes of a particular volume.
+
 ```
-docker volume create —driver=vmdk —name=MyVolume -o size=2gb -o vsan-policy-name=myPolicy -o fstype=xfs
+docker volume create —driver=photon —name=MyVolume -o size=2gb -o vsan-policy-name=myPolicy -o fstype=xfs
 ```
 ```
 docker volume inspect MyVolume
 [
     {
-        "Driver": "vmdk",
+        "Driver": "photon",
         "Labels": {},
         "Mountpoint": "/mnt/vmdk/MyVolume",
         "Name": "MyVolume",
         "Options": {
             "fstype": "xfs",
-            "size": "2gb",
-            "vsan-policy-name": "myPolicy"
+            "size": "2gb"
         },
         "Scope": "global",
         "Status": {
             "access": "read-write",
-            "attach-as": "independent_persistent",
             "capacity": {
                 "allocated": "32MB",
                 "size": "2GB"
             },
-            "clone-from": "None",
             "created": "Wed Mar  1 20:06:02 2017",
             "created by VM": "esx1_swarm01",
             "datastore": "vsanDatastore",
-            "diskformat": "thin",
-            "fstype": "xfs",
-            "status": "detached",
-            "vsan-policy-name": "myPolicy"
+            "status": "detached"
         }
     }
 ]
 ```
-Note: For disk formats zeroedthick and thin, the allocated size would be total size plus the size of replicas.
-
 
 ### Remove volume
 You can remove the volume with following command
