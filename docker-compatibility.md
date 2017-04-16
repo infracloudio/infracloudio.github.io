@@ -1,7 +1,7 @@
 ---
 title: Docker Compatibility
 ---
-<a href=""><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github.com/vmware/docker-volume-vsphere/raw/master/docs/misc/Docker%20Certified.png" width="10" height="10" alt=" "></a>
+![Image](images/docker-cert.jpeg)
 
 vDVS is fully compatible with Docker and this section demonstrates working examples with docker's commands and concepts.
 
