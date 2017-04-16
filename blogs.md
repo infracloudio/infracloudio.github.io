@@ -1,5 +1,8 @@
+---
+title: Blogs
+---
 
-# External Blog entries
+List of blogs related to vSphere Docker Volume Service
 
 - Cormac Hogan
     - Overview
@@ -18,3 +21,4 @@
     - [vSphere Docker Volume Service is now Docker Certified!](https://blogs.vmware.com/virtualblocks/2017/03/29/vsphere-docker-volume-service-now-docker-certified/)
 - Ryan Kelly
     - [How to use the Docker Volume Driver for vSphere with Photon OS](http://www.vmtocloud.com/how-to-use-the-docker-volume-driver-for-vsphere-with-photon-os/)
+
